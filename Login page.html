@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset='utf-8'>
+    <title>Login form</title>
+  </head>
+  <body>
+    <style>
+      body{
+        Margin: 0;
+        Padding: 0;
+        Font-family: sans-serif;
+        Background: #34495e;
+      }
+      .box {
+        Width: 300px;
+        padding: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #191919;
+        text-align: center;
+      }
+      
+      .box h1{
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      .box input[type="text"],.box input[type = "password"]{
+        border: 0;
+        background: none;
+        display: black;
+        margin: 20px auto;
+        text-align:center;
+        border: 2px solid #3498db;
+        padding: 14px 10px;
+        width: 200px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25%;
+      }
+      
+      .box input[type="text"]:focus,.box input[type = "password"]:focus{
+      width: 200px;
+      border-color: #2ecc71;
+      }
+      
+      .box input[type = "submit"]{
+         border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align:center;
+        border: 2px solid #3498db;
+        padding: 14px 40px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25%;
+        curser: pointer;
+        
+      }
+      
+      .box input[type = "submit"]:hover{
+      
+        background: #2ecc71;
+      }
+    </style>
+    <form class="box"  method="post">
+      <h1>Login</h1>
+      <input type="text" name="" action="index.html" placeholder="username" required>
+      <input type="password" name="" placeholder="password" required maxlength="20" min="5">
+      <input type="submit" name="" value="login">
+      
+    </form>
+  </body>
+  
+</html>
